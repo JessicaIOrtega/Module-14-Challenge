@@ -1,0 +1,70 @@
+<main class="container-fluid">
+    <div class="text-center" style="margin: 4rem;">
+        <div class="container mt-5" style="width: 40rem;">
+
+            <div class="" style="margin-top: 20px;">
+                <div class="col d-flex px-3 justify-content-end "><button class="tablink p-2 px-3 mx-3" type="button"
+                        onclick="openPage('logIn')" id="defaultOpen"
+                        style="background-color:#4800ff;color: white">LOGIN</button>
+
+                    <button class="tablink p-2 px-3" type="button" onclick="openPage('signUp')"
+                        style="background-color:#4800ff;color: white">SIGN
+                        UP</button>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-content1" style="background-color: #e8e6f8">
+
+                <div id="signUp" class="tabcontent text-center p-4">
+                    <h3 class="mb-4" style="font-weight: bold;">SIGN UP</h3>
+                    <form class="signup-form">
+                        <div class="m-3">
+                            <input type="email" class="form-control text-center" placeholder="Email" id="email-signup"
+                                name="email" required />
+                        </div>
+                        <div class="m-3">
+                            <input type="password" class="form-control text-center" placeholder="Password"
+                                id="password-signup" name="password" required />
+                        </div>
+                        <button type="submit" class="btn px-3 mt-3" style="background-color:#4800ff;color: white">SIGN
+                            UP</button>
+                    </form>
+                </div>
+
+                <div id="logIn" class="tabcontent text-center p-4">
+                    <h3 class="mb-4" style="font-weight: bold;">LOG IN</h3>
+                    <form class="login-form">
+                        <div class="m-3">
+                            <input type="email" class="form-control text-center" placeholder="Email" id="login-email"
+                                name="email" required />
+                        </div>
+                        <div class="m-3">
+                            <input type="password" class="form-control text-center" placeholder="Password"
+                                id="login-password" name="password" required />
+                        </div>
+                        <button type="submit" class="btn px-3 mt-3" style="background-color:#4800ff;color: white">LOG
+                            IN</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<script>
+    function openPage(pageName, elmnt) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            document.getElementById(pageName).style.display = "block"
+        }
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>

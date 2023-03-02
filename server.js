@@ -44,3 +44,5 @@ app.use(routes);
 sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => console.log('Now listening'));
 });
+
+app.use("/css", express.static(path.join(__dirname, "/public/css")));
