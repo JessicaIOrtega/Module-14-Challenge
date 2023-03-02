@@ -1,0 +1,14 @@
+[
+    {
+        "name": "What is this?",
+        "description": "A great tech blog for many different topics! Hope you enjoy it"
+    },
+    {
+        "name": "UTA Bootcamp",
+        "description": "When in doubt? Do it! Great way to change paths and get a lot of knowledge and experience as a Full Stack Dev"
+    },
+    {
+        "name": "New Post",
+        "description": "This is an example of a description"
+    }
+]
